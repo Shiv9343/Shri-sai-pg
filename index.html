@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Sai PG - Your Home Away From Home in Pune</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Simple scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Shri Sai PG</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#amenities" class="text-gray-600 hover:text-blue-600 transition duration-300">Amenities</a>
+                <a href="#gallery" class="text-gray-600 hover:text-blue-600 transition duration-300">Gallery</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition duration-300">Pricing</a>
+                <a href="#location" class="text-gray-600 hover:text-blue-600 transition duration-300">Location</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Contact
+                    Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#amenities" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Amenities</a>
+            <a href="#gallery" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Gallery</a>
+            <a href="#pricing" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Pricing</a>
+            <a href="#location" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Location</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-cover bg-center h-[60vh] md:h-[80vh]"
+            style="background-image: url('https://storage.googleapis.com/maker-studio-attachments/user-uploads/WhatsApp_Image_2025-09-14_at_21.43.04_3db1e858.jpg-b55d3c34-06d3-402a-bd98-10c4f822aaab');">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div
+                class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white relative z-10">
+                <p class="text-xl md:text-2xl font-light tracking-wider mb-2">Welcome to</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Shri Sai PG</h1>
+                <p class="text-lg md:text-2xl mb-8 max-w-2xl">Your new home in Pune. Safe, comfortable, and
+                    fully-equipped for students and professionals.</p>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">Book
+                    a Visit</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to Shri Sai PG</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+                    Located in the heart of Pune, Shri Sai PG offers a secure and friendly environment perfect for
+                    students and working professionals. We believe in providing more than just a room; we provide a
+                    home. Our facilities are designed to give you the utmost comfort and convenience, so you can focus
+                    on what matters most.
+                </p>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our World-Class Amenities</h2>
+                    <p class="text-gray-600 mt-2">Everything you need for a comfortable stay.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="wifi" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">High-Speed Wi-Fi</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="utensils-crossed" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">Homely Meals</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="shield-check" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">24/7 Security</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="washing-machine" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">Laundry Service</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="air-vent" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">AC Rooms</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="car" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">Parking Space</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="sparkles" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">Housekeeping</h3>
+                    </div>
+                    <!-- Amenity Card -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <i data-lucide="plug-zap" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="font-semibold text-lg">Power Backup</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Take a Tour</h2>
+                    <p class="text-gray-600 mt-2">Explore our cozy and well-maintained spaces.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Spacious+Bedroom" alt="PG Bedroom"
+                        class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/dbeafe/1e40af?text=Common+Area" alt="PG Common Area"
+                        class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Clean+Washroom" alt="PG Washroom"
+                        class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/dbeafe/1e40af?text=Study+Desk" alt="PG Study Desk"
+                        class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Dining+Hall" alt="PG Dining Hall"
+                        class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Flexible Pricing Plans</h2>
+                    <p class="text-gray-600 mt-2">Choose the plan that's right for you. All-inclusive pricing.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- Pricing Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 border-t-4 border-blue-500 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-2">Triple Sharing</h3>
+                        <p class="text-4xl font-bold text-center mb-6">₹8,000<span
+                                class="text-lg font-normal text-gray-500">/month</span></p>
+                        <ul class="space-y-4 text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>Shared Room</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>All Amenities Included</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>Attached Washroom</li>
+                        </ul>
+                        <a href="#contact"
+                            class="bg-gray-200 text-gray-800 text-center font-semibold py-3 rounded-lg hover:bg-gray-300 transition duration-300">Enquire
+                            Now</a>
+                    </div>
+                    <!-- Pricing Card 2 (Popular) -->
+                    <div
+                        class="bg-white rounded-lg shadow-xl p-8 border-t-4 border-blue-700 transform scale-105 flex flex-col relative">
+                        <span
+                            class="bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-4 right-4">POPULAR</span>
+                        <h3 class="text-2xl font-bold text-center mb-2">Double Sharing</h3>
+                        <p class="text-4xl font-bold text-center mb-6">₹10,000<span
+                                class="text-lg font-normal text-gray-500">/month</span></p>
+                        <ul class="space-y-4 text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>More Personal Space</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>All Amenities Included</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>Attached Washroom</li>
+                        </ul>
+                        <a href="#contact"
+                            class="bg-blue-600 text-white text-center font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300">Enquire
+                            Now</a>
+                    </div>
+                    <!-- Pricing Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 border-t-4 border-blue-500 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-2">Single Room</h3>
+                        <p class="text-4xl font-bold text-center mb-6">₹15,000<span
+                                class="text-lg font-normal text-gray-500">/month</span></p>
+                        <ul class="space-y-4 text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>Maximum Privacy</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>All Amenities Included</li>
+                            <li class="flex items-center"><i data-lucide="check"
+                                    class="w-5 h-5 text-green-500 mr-2"></i>Attached Washroom</li>
+                        </ul>
+                        <a href="#contact"
+                            class="bg-gray-200 text-gray-800 text-center font-semibold py-3 rounded-lg hover:bg-gray-300 transition duration-300">Enquire
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Prime Location</h2>
+                    <p class="text-gray-600 mt-2">Conveniently located in Lohegaon, Pune. Close to the airport and major
+                        IT parks.</p>
+                </div>
+                <div class="w-full h-96 rounded-lg shadow-md overflow-hidden">
+                    <!-- Google Maps Embed -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.996144514212!2d73.912631!3d18.596096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7b89796e953%3A0x63428d09353229b3!2sJW78%2BC2R%2C%20Lohegaon%2C%20Pune%2C%20Maharashtra%20411047!5e0!3m2!1sen!2sin!4v1726402035843!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2">Have questions? We'd love to hear from you. Schedule a visit today!
+                    </p>
+                </div>
+                <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Contact Information</h3>
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Address</h4>
+                                <p class="text-gray-600">JW78+C2R, Lohegaon, Pune, Maharashtra 411047</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="phone" class="w-6 h-6 text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p class="text-gray-600">+91 72766 28938</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="mail" class="w-6 h-6 text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-600">contact@shreesaipg.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="clock" class="w-6 h-6 text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Visiting Hours</h4>
+                                <p class="text-gray-600">Mon - Sun: 10:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Shri Sai PG. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">Designed with Love❤️ for a home-like experience.</p>
+            <div class="border-t border-gray-700 mt-4 pt-4 text-sm text-gray-500">
+                <p>Website created by Shiv</p>
+                <p>To create a website, contact: 9343683847</p>
+                <p>shivsingh12469@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Optional: Add a subtle shadow to the header on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+
+</html>
